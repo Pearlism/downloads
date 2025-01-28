@@ -1,4 +1,4 @@
-// Initialize Particles.js with custom configuration
+
 particlesJS('particles-js', {
     particles: {
         number: {
