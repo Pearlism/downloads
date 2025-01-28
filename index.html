@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aether Free Downloads</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Include FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Particles.js Container -->
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Aether Free Downloads</h1>
+        </div>
+
+        <!-- Downloads Section -->
+        <div class="download-section">
+            <label for="download">Select Download</label>
+            <select id="download" class="download-select">
+                <option value="">Choose a download...</option>
+                <option value="aether-cleaner">Aether Cleaner</option>
+                <option value="aether-fivem">Aether Fivem</option>
+                <option value="tweaks">Tweaks</option>
+            </select>
+            <button class="download-btn" onclick="downloadFile()">
+                <i class="fas fa-download"></i> Download
+            </button>
+        </div>
+
+        <!-- Available Downloads Section -->
+        <div class="available-downloads">
+            <h3>Available Downloads</h3>
+            <div class="download-category"><span>Aether Cleaner</span></div>
+            <div class="download-category"><span>Aether Fivem</span></div>
+            <div class="download-category"><span>Tweaks</span></div>
+        </div>
+
+        <!-- Social Links Section -->
+        <div class="social-links">
+            <a href="https://discord.gg/nDD4WxnSps" target="_blank" class="social-icon">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://landen419.com" target="_blank" class="social-icon">
+                <i class="fas fa-globe"></i>
+            </a>
+        </div>        
+    </div>
+
+    <script src="particles-init.js"></script> <!-- Initialize Particles.js -->
+    <script>
+        function downloadFile() {
+            var downloadOption = document.getElementById("download").value;
+            if (downloadOption !== "") {
+                var fileLink = "";
+                switch (downloadOption) {
+                    case "aether-cleaner":
+                        fileLink = "https://gofile.io/d/yIStAW";  // Replace with actual URL
+                        break;
+                    case "aether-fivem":
+                        fileLink = "https://gofile.io/d/u1ekt3";  // Replace with actual URL
+                        break;
+                    case "tweaks":
+                        fileLink = "https://gofile.io/d/FbYPUh";  // Replace with actual URL
+                        break;
+                }
+                if (fileLink) {
+                    window.location.href = fileLink;
+                }
+            } else {
+                alert("Please select a download option.");
+            }
+        }
+    </script>
+</body>
+</html>
