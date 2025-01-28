@@ -6,11 +6,11 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url('https://img.freepik.com/free-vector/gradient-galaxy-background_52683-139134.jpg?size=626&ext=jpg'); /* Add your background image URL here */
+    background-image: url('https://img.freepik.com/free-vector/gradient-galaxy-background_52683-139134.jpg?size=626&ext=jpg'); 
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Keeps the background fixed */
-    background-color: black; /* Fallback color if the image is not loaded */
+    background-attachment: fixed; 
+    background-color: black; 
     color: white;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@ body {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    min-height: 100vh; /* Ensures full screen height */
+    min-height: 100vh; 
     text-align: center;
 }
 
@@ -28,7 +28,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: -1; /* Keep particles in the background */
+    z-index: -1; 
 }
 
 .container {
@@ -38,7 +38,7 @@ body {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
-    box-shadow: 0 0 15px 5px rgba(0, 165, 255, 0.6); /* Glowing magenta shadow effect */
+    box-shadow: 0 0 15px 5px rgba(0, 165, 255, 0.6); 
 }
 
 .header h1 {
@@ -102,9 +102,9 @@ body {
     margin-top: 20px;
     color: #00a5ff;
     padding: 15px;
-    border: 2px solid #00a5ff; /* Border around the download list */
+    border: 2px solid #00a5ff; 
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent black background */
+    background-color: rgba(0, 0, 0, 0.6); 
 }
 
 .available-downloads h3 {
@@ -116,7 +116,7 @@ body {
 .download-category {
     font-size: 1em;
     margin-bottom: 12px;
-    padding-left: 35px; /* Space for the chain icon */
+    padding-left: 35px;
     position: relative;
     display: flex;
     align-items: center;
@@ -124,16 +124,16 @@ body {
 }
 
 .download-category:before {
-    content: "\f0c1"; /* Unicode for chain icon */
-    font-family: 'FontAwesome'; /* Ensure the FontAwesome font is applied */
+    content: "\f0c1"; 
+    font-family: 'FontAwesome'; 
     position: absolute;
-    left: 10px; /* Adjusted for better spacing */
+    left: 10px; 
     color: #00a5ff;
     font-size: 1.2em;
 }
 
 .download-category span {
-    padding-left: 8px; /* Space between the icon and text */
+    padding-left: 8px; 
 }
 
 .download-category:last-child {
@@ -148,17 +148,17 @@ body {
 }
 
 .social-icon {
-    font-size: 30px;  /* Adjust icon size */
+    font-size: 30px;  
     color: white;
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #7289da;  /* Discord's blue color on hover */
+    color: #7289da;  
 }
 
 .social-icon:active {
-    color: #00a5ff;  /* Slightly darker blue on click */
+    color: #00a5ff; 
 }
 
 
